@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Threats Intelligence Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔒 Cyber Threats Intelligence Dashboard</h1>
+            <p class="tagline">Comprehensive Analysis of 2024-2025 Cyber Threat Landscape</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-tabs">
+                <li><a href="#" class="tab-link active" data-tab="apt-groups">APT Groups</a></li>
+                <li><a href="#" class="tab-link" data-tab="raas-groups">RaaS Operation Groups</a></li>
+                <li><a href="#" class="tab-link" data-tab="real-world-attacks">Real-World Attacks</a></li>
+                <li><a href="#" class="tab-link" data-tab="zero-day">Zero Day</a></li>
+                <li><a href="#" class="tab-link" data-tab="steganography">Steganography</a></li>
+                <li><a href="#" class="tab-link" data-tab="rce">RCE</a></li>
+                <li><a href="#" class="tab-link" data-tab="triple-extortion">Triple Extortion</a></li>
+                <li><a href="#" class="tab-link" data-tab="defense">Defense Strategies</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- APT Groups Tab -->
+        <div id="apt-groups" class="tab-content active">
+            <h2>Advanced Persistent Threat (APT) Groups</h2>
+            <p class="intro">Nation-state sponsored threat actors conducting sophisticated, long-term cyber espionage operations.</p>
+            
+            <div class="subtabs">
+                <button class="subtab-btn active" data-subtab="apt-apt29">APT29</button>
+                <button class="subtab-btn" data-subtab="apt-sandworm">Sandworm</button>
+                <button class="subtab-btn" data-subtab="apt-lazarus">Lazarus</button>
+                <button class="subtab-btn" data-subtab="apt-salt-typhoon">Salt Typhoon</button>
+            </div>
+
+            <div id="apt-apt29" class="subtab-content active">
+                <h3>APT29 (Cozy Bear)</h3>
+                <div class="threat-card">
+                    <p><strong>Origin:</strong> Russia (SVR - Foreign Intelligence Service)</p>
+                    <p><strong>Active Since:</strong> ~2008</p>
+                    <p><strong>Primary Targets:</strong></p>
+                    <ul>
+                        <li>Government agencies and diplomatic institutions</li>
+                        <li>Healthcare and pharmaceutical companies</li>
+                        <li>Financial systems and Treasury departments</li>
+                        <li>Energy sector espionage</li>
+                    </ul>
+                    <p><strong>Notable Campaigns:</strong></p>
+                    <ul>
+                        <li>SolarWinds supply chain attack (2020)</li>
+                        <li>Treasury Department breach (2024)</li>
+                        <li>COVID-19 vaccine research targeting</li>
+                    </ul>
+                    <p><strong>TTPs:</strong> Sophisticated spear-phishing, zero-day exploitation, supply chain compromises, living-off-the-land techniques</p>
+                </div>
+            </div>
+
+            <div id="apt-sandworm" class="subtab-content">
+                <h3>Sandworm</h3>
+                <div class="threat-card">
+                    <p><strong>Origin:</strong> Russia (GRU - Military Intelligence)</p>
+                    <p><strong>Active Since:</strong> ~2009</p>
+                    <p><strong>Primary Targets:</strong></p>
+                    <ul>
+                        <li>Critical infrastructure (power grids, utilities)</li>
+                        <li>Hospital IT systems in EU</li>
+                        <li>Ukrainian government and infrastructure</li>
+                        <li>Industrial control systems (ICS/OT)</li>
+                    </ul>
+                    <p><strong>Notable Campaigns:</strong></p>
+                    <ul>
+                        <li>Ukraine power grid attacks (2015, 2016)</li>
+                        <li>NotPetya global wiper attack (2017)</li>
+                        <li>4,000+ cyberattacks on Ukraine infrastructure (2024-2025)</li>
+                        <li>Olympic Destroyer malware</li>
+                    </ul>
+                    <p><strong>TTPs:</strong> ICS/SCADA targeting, wiper malware, destructive attacks disguised as ransomware, supply chain attacks</p>
+                </div>
+            </div>
+
+            <div id="apt-lazarus" class="subtab-content">
+                <h3>Lazarus Group</h3>
+                <div class="threat-card">
+                    <p><strong>Origin:</strong> North Korea (RGB - Reconnaissance General Bureau)</p>
+                    <p><strong>Active Since:</strong> ~2009</p>
+                    <p><strong>Primary Targets:</strong></p>
+                    <ul>
+                        <li>Financial institutions and cryptocurrency exchanges</li>
+                        <li>Defense contractors and aerospace</li>
+                        <li>Industrial manufacturing</li>
+                        <li>Supply chain infrastructure</li>
+                    </ul>
+                    <p><strong>Notable Campaigns:</strong></p>
+                    <ul>
+                        <li>Sony Pictures hack (2014)</li>
+                        <li>SWIFT banking heist - $81M Bangladesh Bank (2016)</li>
+                        <li>WannaCry ransomware (2017)</li>
+                        <li>Bybit cryptocurrency theft - $1.5B (2025)</li>
+                        <li>TraderTraitor operation</li>
+                    </ul>
+                    <p><strong>TTPs:</strong> Financially motivated attacks, cryptocurrency theft, spear-phishing, watering hole attacks, custom malware frameworks</p>
+                </div>
+            </div>
+
+            <div id="apt-salt-typhoon" class="subtab-content">
+                <h3>Salt Typhoon</h3>
+                <div class="threat-card">
+                    <p><strong>Origin:</strong> China (State-sponsored)</p>
+                    <p><strong>Active Since:</strong> ~2020</p>
+                    <p><strong>Primary Targets:</strong></p>
+                    <ul>
+                        <li>Telecommunications providers</li>
+                        <li>Cloud service infrastructure</li>
+                        <li>Technology companies</li>
+                        <li>Critical communication networks</li>
+                    </ul>
+                    <p><strong>Notable Campaigns:</strong></p>
+                    <ul>
+                        <li>U.S. telecommunications breach (2024-2025)</li>
+                        <li>AT&T, Verizon, Lumen targeting</li>
+                        <li>Deep network embedding for long-term espionage</li>
+                        <li>Identity and data layer infiltration</li>
+                    </ul>
+                    <p><strong>TTPs:</strong> Long-term persistence, telecom infrastructure exploitation, supply chain positioning, advanced network reconnaissance</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RaaS Operation Groups Tab -->
+        <div id="raas-groups" class="tab-content">
+            <h2>Ransomware-as-a-Service (RaaS) Operation Groups</h2>
+            <p class="intro">Criminal syndicates offering ransomware platforms to affiliates, enabling widespread double and triple extortion attacks.</p>
+            
+            <div class="subtabs">
+                <button class="subtab-btn active" data-subtab="raas-lockbit">LockBit</button>
+                <button class="subtab-btn" data-subtab="raas-blackcat">BlackCat/ALPHV</button>
+                <button class="subtab-btn" data-subtab="raas-clop">Cl0p</button>
+                <button class="subtab-btn" data-subtab="raas-conti">Conti</button>
+                <button class="subtab-btn" data-subtab="raas-revil">REvil</button>
+                <button class="subtab-btn" data-subtab="raas-blackbasta">Black Basta</button>
+            </div>
+
+            <div id="raas-lockbit" class="subtab-content active">
+                <h3>LockBit</h3>
+                <div class="threat-card">
+                    <p><strong>Status:</strong> Partially disrupted (Operation Cronos - Feb 2024)</p>
+                    <p><strong>Business Model:</strong> RaaS with 70/30 profit split (affiliate/operators)</p>
+                    <p><strong>Key Characteristics:</strong></p>
+                    <ul>
+                        <li>One of the most prolific ransomware groups globally</li>
+                        <li>Automated encryption and fast deployment</li>
+                        <li>StealBit data exfiltration tool</li>
+                        <li>Bug bounty program for their malware</li>
+                    </ul>
+                    <p><strong>Notable Attacks:</strong></p>
+                    <ul>
+                        <li>ICBC ransomware disrupting global Treasury trading (2024)</li>
+                        <li>Lurie Children's Hospital (2025)</li>
+                        <li>Royal Mail UK (2023)</li>
+                        <li>1,700+ victims across all sectors</li>
+                    </ul>
+                    <p><strong>Ransom Range:</strong> $1M - $50M+</p>
+                </div>
+            </div>
+
+            <div id="raas-blackcat" class="subtab-content">
+                <h3>BlackCat / ALPHV</h3>
+                <div class="threat-card">
+                    <p><strong>Status:</strong> Exit scam (2024), but variants continue</p>
+                    <p><strong>Business Model:</strong> Sophisticated RaaS with professional operations</p>
+                    <p><strong>Key Characteristics:</strong></p>
+                    <ul>
+                        <li>First ransomware written in Rust language</li>
+                        <li>Cross-platform capability (Windows, Linux, VMware ESXi)</li>
+                        <li>Triple extortion tactics</li>
+                        <li>Professional negotiation team</li>
+                    </ul>
+                    <p><strong>Notable Attacks:</strong></p>
+                    <ul>
+                        <li>Change Healthcare - $2.87B crisis (2024)</li>
+                        <li>MGM Resorts (2023)</li>
+                        <li>HCA Healthcare data exposure</li>
+                        <li>Targeting healthcare billing systems</li>
+                    </ul>
+                    <p><strong>Ransom Range:</strong> $400K - $50M+</p>
+                </div>
+            </div>
+
+            <div id="raas-clop" class="subtab-content">
+                <h3>Cl0p</h3>
+                <div class="threat-card">
+                    <p><strong>Status:</strong> Active</p>
+                    <p><strong>Business Model:</strong> RaaS with focus on zero-day exploitation</p>
+                    <p><strong>Key Characteristics:</strong></p>
+                    <ul>
+                        <li>Specializes in mass exploitation of software vulnerabilities</li>
+                        <li>MOVEit Transfer zero-day campaign</li>
+                        <li>GoAnywhere MFT exploitation</li>
+                        <li>Large-scale data theft operations</li>
+                    </ul>
+                    <p><strong>Notable Attacks:</strong></p>
+                    <ul>
+                        <li>MOVEit vulnerability exploitation - 1,000+ organizations (2023-2024)</li>
+                        <li>Evolve Bank data breach (2024)</li>
+                        <li>Shell, British Airways, BBC via MOVEit</li>
+                        <li>Financial services targeting</li>
+                    </ul>
+                    <p><strong>Ransom Range:</strong> $500K - $20M</p>
+                </div>
+            </div>
+
+            <div id="raas-conti" class="subtab-content">
+                <h3>Conti</h3>
+                <div class="threat-card">
+                    <p><strong>Status:</strong> Officially disbanded (2022), but splinter groups active</p>
+                    <p><strong>Business Model:</strong> Full-time employees, structured like a corporation</p>
+                    <p><strong>Key Characteristics:</strong></p>
+                    <ul>
+                        <li>One of the most organized ransomware operations</li>
+                        <li>Internal leaks revealed operations structure</li>
+                        <li>Ties to Russian government</li>
+                        <li>Splinter groups: Karakurt, BlackByte, Hive</li>
+                    </ul>
+                    <p><strong>Notable Attacks:</strong></p>
+                    <ul>
+                        <li>Costa Rica government - national emergency declared (2022)</li>
+                        <li>Ireland's HSE healthcare system (2021)</li>
+                        <li>700+ attacks before disbanding</li>
+                        <li>Financial sector targeting</li>
+                    </ul>
+                    <p><strong>Ransom Range:</strong> $1M - $25M</p>
+                </div>
+            </div>
+
+            <div id="raas-revil" class="subtab-content">
+                <h3>REvil (Sodinokibi)</h3>
+                <div class="threat-card">
+                    <p><strong>Status:</strong> Disrupted by law enforcement (2021-2022)</p>
+                    <p><strong>Business Model:</strong> RaaS with auction-based extortion</p>
+                    <p><strong>Key Characteristics:</strong></p>
+                    <ul>
+                        <li>Successor to GandCrab</li>
+                        <li>Innovative extortion techniques</li>
+                        <li>Data auction platform</li>
+                        <li>Supply chain attack specialists</li>
+                    </ul>
+                    <p><strong>Notable Attacks:</strong></p>
+                    <ul>
+                        <li>Kaseya VSA supply chain attack - 1,500 businesses (2021)</li>
+                        <li>JBS Foods - $11M ransom paid (2021)</li>
+                        <li>Acer - $50M ransom demand (2021)</li>
+                        <li>Financial services targeting</li>
+                    </ul>
+                    <p><strong>Ransom Range:</strong> $500K - $70M</p>
+                </div>
+            </div>
+
+            <div id="raas-blackbasta" class="subtab-content">
+                <h3>Black Basta</h3>
+                <div class="threat-card">
+                    <p><strong>Status:</strong> Active (emerged 2022)</p>
+                    <p><strong>Business Model:</strong> Selective RaaS with high-value targets</p>
+                    <p><strong>Key Characteristics:</strong></p>
+                    <ul>
+                        <li>Likely Conti splinter group</li>
+                        <li>Rapid encryption capabilities</li>
+                        <li>QakBot malware distribution</li>
+                        <li>Focus on enterprise targets</li>
+                    </ul>
+                    <p><strong>Notable Attacks:</strong></p>
+                    <ul>
+                        <li>Healthcare sector targeting (2024)</li>
+                        <li>American Dental Association (2022)</li>
+                        <li>Deutsche Windtechnik (2022)</li>
+                        <li>500+ victims in first two years</li>
+                    </ul>
+                    <p><strong>Ransom Range:</strong> $1M - $30M</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Real-World Attacks Tab -->
+        <div id="real-world-attacks" class="tab-content">
+            <h2>Real-World Attacks by Industry (2024-2025)</h2>
+            <p class="intro">Industry-specific threat analysis showing targeted attack patterns, dominant threat actors, and major incidents.</p>
+            
+            <div class="subtabs">
+                <button class="subtab-btn active" data-subtab="industry-healthcare">🏥 Healthcare</button>
+                <button class="subtab-btn" data-subtab="industry-energy">⚡ Energy & Manufacturing</button>
+                <button class="subtab-btn" data-subtab="industry-finance">🏦 Financial Services</button>
+                <button class="subtab-btn" data-subtab="industry-telecom">🛰️ Telecommunications</button>
+                <button class="subtab-btn" data-subtab="industry-public">🏛️ Public Sector</button>
+            </div>
+
+            <div id="industry-healthcare" class="subtab-content active">
+                <h3>🏥 Healthcare & Life Sciences</h3>
+                <div class="threat-card">
+                    <p><strong>Dominant Threat Groups:</strong></p>
+                    <ul>
+                        <li><strong>RaaS:</strong> BlackCat/ALPHV, LockBit, Black Basta</li>
+                        <li><strong>APT:</strong> Sandworm (targeting hospital IT systems in EU), APT29 (data theft operations)</li>
+                    </ul>
+                    
+                    <h4>Top 5 Recent Attacks:</h4>
+                    
+                    <div class="attack-entry">
+                        <h5>1. Change Healthcare (2024)</h5>
+                        <p><strong>Impact:</strong> $2.87B ransomware crisis</p>
+                        <p><strong>Actor:</strong> ALPHV/BlackCat</p>
+                        <p><strong>Consequences:</strong> Halted U.S. medical payments nationwide, affecting pharmacy claims processing and patient care</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>2. NHS Synnovis (2024)</h5>
+                        <p><strong>Impact:</strong> 400GB patient data leaked</p>
+                        <p><strong>Actor:</strong> Qilin Gang ransomware</p>
+                        <p><strong>Consequences:</strong> Blood test services disrupted, patient data published on dark web</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>3. HCA Healthcare (2024)</h5>
+                        <p><strong>Impact:</strong> 11M records exposed</p>
+                        <p><strong>Actor:</strong> Insider + ransomware hybrid attack</p>
+                        <p><strong>Consequences:</strong> Patient and employee data compromised</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>4. Lurie Children's Hospital (2025)</h5>
+                        <p><strong>Impact:</strong> Critical care systems offline</p>
+                        <p><strong>Actor:</strong> LockBit variant</p>
+                        <p><strong>Consequences:</strong> Manual paper-based operations, patient transfer to other facilities</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>5. Johnson Memorial Hospital (2025)</h5>
+                        <p><strong>Impact:</strong> Complete system rebuild required</p>
+                        <p><strong>Actor:</strong> Ransomware (group unconfirmed)</p>
+                        <p><strong>Consequences:</strong> Extended downtime, operational disruption</p>
+                    </div>
+
+                    <div class="trend-box">
+                        <h4>📊 Trend Analysis:</h4>
+                        <p>Healthcare remains the <strong>most lucrative RaaS target</strong>. Patient data, critical downtime, and billing system dependencies create maximum ransom leverage. Average ransom: $4.4M. Average downtime: 22 days.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="industry-energy" class="subtab-content">
+                <h3>⚡ Energy, Utilities & Manufacturing</h3>
+                <div class="threat-card">
+                    <p><strong>Dominant Threat Groups:</strong></p>
+                    <ul>
+                        <li><strong>APT:</strong> Sandworm (Ukraine power grid), APT29 (energy espionage), Lazarus (industrial sabotage)</li>
+                        <li><strong>RaaS:</strong> LockBit, Cl0p, BlackCat</li>
+                    </ul>
+                    
+                    <h4>Top 5 Recent Attacks:</h4>
+                    
+                    <div class="attack-entry">
+                        <h5>1. Halliburton Energy (2024)</h5>
+                        <p><strong>Impact:</strong> $35M ransomware impact</p>
+                        <p><strong>Actor:</strong> RaaS group (undisclosed)</p>
+                        <p><strong>Consequences:</strong> Oilfield services disruption, operational delays</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>2. Duke Energy Florida (2024)</h5>
+                        <p><strong>Impact:</strong> OT/ICS compromise</p>
+                        <p><strong>Actor:</strong> Phishing → SCADA infection</p>
+                        <p><strong>Consequences:</strong> Potential grid control loss, emergency response activated</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>3. U.S. Water Utilities (2024)</h5>
+                        <p><strong>Impact:</strong> Multiple facilities compromised</p>
+                        <p><strong>Actor:</strong> Coordinated OT ransomware campaign</p>
+                        <p><strong>Consequences:</strong> "Die Hard 4.0"-style substation control loss scenarios</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>4. Colonial Pipeline (2021)</h5>
+                        <p><strong>Impact:</strong> 5,500 miles fuel supply disruption</p>
+                        <p><strong>Actor:</strong> DarkSide ransomware</p>
+                        <p><strong>Consequences:</strong> $4.4M ransom paid, East Coast fuel shortage, benchmark energy sector attack</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>5. Ukraine Infrastructure (2024-2025)</h5>
+                        <p><strong>Impact:</strong> 4,000+ coordinated cyberattacks</p>
+                        <p><strong>Actor:</strong> Sandworm (Russian-linked)</p>
+                        <p><strong>Consequences:</strong> Power grid sabotage, wiper malware deployment, infrastructure destruction</p>
+                    </div>
+
+                    <div class="trend-box">
+                        <h4>📊 Trend Analysis:</h4>
+                        <p>Nation-states and RaaS operations increasingly overlap. <strong>ICS/OT targeting is rising</strong> with AI-assisted intrusion tools. Critical infrastructure attacks carry geopolitical implications beyond financial gain.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="industry-finance" class="subtab-content">
+                <h3>🏦 Financial Services & Cryptocurrency</h3>
+                <div class="threat-card">
+                    <p><strong>Dominant Threat Groups:</strong></p>
+                    <ul>
+                        <li><strong>APT:</strong> Lazarus (North Korea), APT29 (espionage on Treasury, banking systems)</li>
+                        <li><strong>RaaS:</strong> Cl0p, Conti, REvil, BlackCat</li>
+                    </ul>
+                    
+                    <h4>Top 5 Recent Attacks:</h4>
+                    
+                    <div class="attack-entry">
+                        <h5>1. LoanDepot (2024)</h5>
+                        <p><strong>Impact:</strong> 16.9M records breached</p>
+                        <p><strong>Actor:</strong> Ransomware group</p>
+                        <p><strong>Consequences:</strong> Customer data + SSNs stolen, identity theft risk</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>2. Bybit Cryptocurrency Theft (2025)</h5>
+                        <p><strong>Impact:</strong> $1.5B Ethereum stolen</p>
+                        <p><strong>Actor:</strong> TraderTraitor (Lazarus Group)</p>
+                        <p><strong>Consequences:</strong> Largest cryptocurrency theft in history</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>3. Evolve Bank (2024)</h5>
+                        <p><strong>Impact:</strong> Customer data breach</p>
+                        <p><strong>Actor:</strong> Cl0p via MOVEit exploitation</p>
+                        <p><strong>Consequences:</strong> Financial data exposure, regulatory scrutiny</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>4. Treasury Department Breach (2024)</h5>
+                        <p><strong>Impact:</strong> Espionage on U.S. financial systems</p>
+                        <p><strong>Actor:</strong> APT29</p>
+                        <p><strong>Consequences:</strong> Sensitive financial intelligence compromised</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>5. ICBC Ransomware (2024)</h5>
+                        <p><strong>Impact:</strong> Global Treasury trading disrupted</p>
+                        <p><strong>Actor:</strong> LockBit</p>
+                        <p><strong>Consequences:</strong> U.S. Treasury market affected, manual workarounds required</p>
+                    </div>
+
+                    <div class="trend-box">
+                        <h4>📊 Trend Analysis:</h4>
+                        <p><strong>Crypto + Banking convergence</strong> attracts both state-sponsored theft and financial espionage. North Korean operations fund regime through cryptocurrency theft. Double targeting: steal money AND financial intelligence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="industry-telecom" class="subtab-content">
+                <h3>🛰️ Telecommunications, Cloud & Technology</h3>
+                <div class="threat-card">
+                    <p><strong>Dominant Threat Groups:</strong></p>
+                    <ul>
+                        <li><strong>APT:</strong> Salt Typhoon (China), APT29 (Russia), Sandworm</li>
+                        <li><strong>RaaS:</strong> LockBit, ALPHV</li>
+                    </ul>
+                    
+                    <h4>Top 5 Recent Attacks:</h4>
+                    
+                    <div class="attack-entry">
+                        <h5>1. Salt Typhoon Campaign (2024-2025)</h5>
+                        <p><strong>Impact:</strong> Deep network embedding in U.S. telecoms</p>
+                        <p><strong>Actor:</strong> Salt Typhoon (Chinese APT)</p>
+                        <p><strong>Consequences:</strong> AT&T, Verizon, Lumen compromised; long-term espionage capability established</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>2. Snowflake Breach (2024)</h5>
+                        <p><strong>Impact:</strong> 100+ customer breaches</p>
+                        <p><strong>Actor:</strong> Scattered Spider</p>
+                        <p><strong>Consequences:</strong> MFA bypass, cascading data breaches across cloud customers</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>3. CrowdStrike-Microsoft Outage (July 2024)</h5>
+                        <p><strong>Impact:</strong> Global endpoint outage</p>
+                        <p><strong>Actor:</strong> Code issue (supply chain risk)</p>
+                        <p><strong>Consequences:</strong> 8.5M Windows systems affected, airline/healthcare disruptions</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>4. Ivanti VPN Zero-Day Exploitation (2024)</h5>
+                        <p><strong>Impact:</strong> Enterprise VPN compromise</p>
+                        <p><strong>Actor:</strong> Chinese espionage groups</p>
+                        <p><strong>Consequences:</strong> Telecoms, finance, and defense sectors infiltrated</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>5. AT&T / T-Mobile Leaks (2024)</h5>
+                        <p><strong>Impact:</strong> Customer data exposed</p>
+                        <p><strong>Actor:</strong> Third-party cloud misconfigurations</p>
+                        <p><strong>Consequences:</strong> PII exposure, regulatory fines</p>
+                    </div>
+
+                    <div class="trend-box">
+                        <h4>📊 Trend Analysis:</h4>
+                        <p><strong>Telcos + Cloud = nation-state goldmine.</strong> APTs embedding deep into identity and data layers for long-term intelligence collection. Supply chain attacks on infrastructure providers have cascading impacts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="industry-public" class="subtab-content">
+                <h3>🏛️ Public Sector, Retail & Transportation</h3>
+                <div class="threat-card">
+                    <p><strong>Dominant Threat Groups:</strong></p>
+                    <ul>
+                        <li><strong>APT:</strong> APT29 (government espionage), Sandworm (infrastructure), Lazarus (supply chain)</li>
+                        <li><strong>RaaS:</strong> LockBit, Conti, Black Basta</li>
+                    </ul>
+                    
+                    <h4>Top 5 Recent Attacks:</h4>
+                    
+                    <div class="attack-entry">
+                        <h5>1. National Public Data Breach (2024)</h5>
+                        <p><strong>Impact:</strong> 2.9B identities exposed</p>
+                        <p><strong>Actor:</strong> Mass data aggregator compromise</p>
+                        <p><strong>Consequences:</strong> SSNs, addresses, historical records leaked; largest data breach in history</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>2. Port of Seattle (2024)</h5>
+                        <p><strong>Impact:</strong> Airport & port control system hack</p>
+                        <p><strong>Actor:</strong> Ransomware group</p>
+                        <p><strong>Consequences:</strong> "Sneakers"-style financial system targeting, flight operations disrupted</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>3. CDK Global (2024)</h5>
+                        <p><strong>Impact:</strong> Automotive dealership platform ransomware</p>
+                        <p><strong>Actor:</strong> RaaS group</p>
+                        <p><strong>Consequences:</strong> Supply chain cascade affecting 15,000+ car dealerships</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>4. FBI Operation Cookie Monster (2024)</h5>
+                        <p><strong>Impact:</strong> Genesis Market takedown</p>
+                        <p><strong>Actor:</strong> Law enforcement operation</p>
+                        <p><strong>Consequences:</strong> Dark web credential marketplace shut down, 119 arrests</p>
+                    </div>
+
+                    <div class="attack-entry">
+                        <h5>5. Botnet & Rootkit Operations (2024-2025)</h5>
+                        <p><strong>Impact:</strong> Coordinated global takedowns</p>
+                        <p><strong>Actor:</strong> Various C2 infrastructures</p>
+                        <p><strong>Consequences:</strong> Disruption of cybercriminal infrastructure, temporary operational setbacks</p>
+                    </div>
+
+                    <div class="trend-box">
+                        <h4>📊 Trend Analysis:</h4>
+                        <p><strong>Rising attacks on digital supply chains</strong> and critical transportation nodes. Mix of espionage with criminal monetization. Government takedown operations increasing but threat actors adapt quickly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zero Day Tab -->
+        <div id="zero-day" class="tab-content">
+            <h2>Zero-Day Vulnerabilities</h2>
+            <p class="intro">Previously unknown vulnerabilities exploited by threat actors before patches are available.</p>
+            
+            <div class="threat-card">
+                <h3>What is a Zero-Day?</h3>
+                <p>A zero-day vulnerability is a software security flaw that is unknown to the software vendor. The term "zero-day" refers to the number of days the vendor has had to patch the vulnerability—zero.</p>
+                
+                <h4>Key Characteristics:</h4>
+                <ul>
+                    <li><strong>Unknown:</strong> The vulnerability is not publicly known</li>
+                    <li><strong>Unpatched:</strong> No security update is available</li>
+                    <li><strong>Actively Exploited:</strong> Attackers are using it in the wild</li>
+                    <li><strong>High Value:</strong> Zero-days are extremely valuable on dark markets ($100K - $2M+)</li>
+                </ul>
+
+                <h4>Recent Notable Zero-Day Exploitations (2024-2025):</h4>
+                
+                <div class="attack-entry">
+                    <h5>MOVEit Transfer (CVE-2023-34362)</h5>
+                    <p><strong>Exploited by:</strong> Cl0p ransomware</p>
+                    <p><strong>Impact:</strong> 1,000+ organizations, mass data exfiltration</p>
+                    <p><strong>Type:</strong> SQL injection in file transfer software</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>Ivanti Connect Secure VPN (Multiple CVEs)</h5>
+                    <p><strong>Exploited by:</strong> Chinese APT groups</p>
+                    <p><strong>Impact:</strong> Enterprise network infiltration</p>
+                    <p><strong>Type:</strong> Authentication bypass and command injection</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>Chrome V8 Engine (Various CVEs)</h5>
+                    <p><strong>Exploited by:</strong> Nation-state actors</p>
+                    <p><strong>Impact:</strong> Browser-based attacks</p>
+                    <p><strong>Type:</strong> Memory corruption vulnerabilities</p>
+                </div>
+
+                <h4>Zero-Day Markets:</h4>
+                <p><strong>Government Programs:</strong></p>
+                <ul>
+                    <li>U.S. Vulnerability Equities Process (VEP)</li>
+                    <li>Bug bounty programs (Microsoft, Google, Apple)</li>
+                    <li>Intelligence agency acquisition</li>
+                </ul>
+
+                <p><strong>Black Market Prices (Estimated):</strong></p>
+                <ul>
+                    <li>iOS Zero-Days: $1M - $2M+</li>
+                    <li>Android Zero-Days: $500K - $1M</li>
+                    <li>Windows Zero-Days: $100K - $500K</li>
+                    <li>VPN/Firewall Zero-Days: $500K - $1M</li>
+                </ul>
+
+                <h4>Defense Strategies:</h4>
+                <ul>
+                    <li>Implement defense-in-depth architecture</li>
+                    <li>Use application allowlisting</li>
+                    <li>Deploy endpoint detection and response (EDR)</li>
+                    <li>Maintain robust logging and monitoring</li>
+                    <li>Rapid patch management when updates become available</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Steganography Tab -->
+        <div id="steganography" class="tab-content">
+            <h2>Steganography in Cyber Attacks</h2>
+            <p class="intro">The practice of hiding malicious code, commands, or data within seemingly innocent files to evade detection.</p>
+            
+            <div class="threat-card">
+                <h3>What is Steganography?</h3>
+                <p>Steganography is the art of hiding information within other non-secret data. In cybersecurity, attackers use steganography to conceal malware, exfiltrate data, or establish covert communications channels.</p>
+                
+                <h4>Common Steganography Techniques:</h4>
+                
+                <div class="attack-entry">
+                    <h5>1. Image Steganography</h5>
+                    <p><strong>Method:</strong> Hide data in the least significant bits (LSB) of image pixels</p>
+                    <p><strong>Use Case:</strong> Embedding malware payloads in images on compromised websites</p>
+                    <p><strong>Detection Difficulty:</strong> High - visually identical to original image</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>2. Document Steganography</h5>
+                    <p><strong>Method:</strong> Hide code in metadata, white text, or formatting of documents</p>
+                    <p><strong>Use Case:</strong> Phishing emails with hidden macros</p>
+                    <p><strong>Detection Difficulty:</strong> Medium - requires deep inspection</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>3. Network Steganography</h5>
+                    <p><strong>Method:</strong> Hide data in protocol headers, timing patterns, or unused fields</p>
+                    <p><strong>Use Case:</strong> Covert C2 communications</p>
+                    <p><strong>Detection Difficulty:</strong> Very High - blends with normal traffic</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>4. Audio/Video Steganography</h5>
+                    <p><strong>Method:</strong> Embed data in multimedia files</p>
+                    <p><strong>Use Case:</strong> Data exfiltration from air-gapped networks</p>
+                    <p><strong>Detection Difficulty:</strong> High - requires specialized analysis</p>
+                </div>
+
+                <h4>Real-World Examples:</h4>
+                <ul>
+                    <li><strong>APT32 (OceanLotus):</strong> Used steganography to hide backdoors in image files</li>
+                    <li><strong>Stegoloader:</strong> Malware that retrieves encrypted payload from PNG images</li>
+                    <li><strong>Sunburst (SolarWinds):</strong> Used steganography for C2 communication obfuscation</li>
+                    <li><strong>Vawtrak Banking Trojan:</strong> Hid configuration data in image files</li>
+                </ul>
+
+                <h4>Why Attackers Use Steganography:</h4>
+                <ul>
+                    <li>Evade signature-based detection systems</li>
+                    <li>Bypass data loss prevention (DLP) tools</li>
+                    <li>Maintain persistent, covert communication</li>
+                    <li>Exfiltrate data without triggering alerts</li>
+                    <li>Distribute malware through legitimate channels</li>
+                </ul>
+
+                <h4>Detection and Prevention:</h4>
+                <ul>
+                    <li><strong>Steganalysis tools:</strong> Detect statistical anomalies in files</li>
+                    <li><strong>Behavioral analysis:</strong> Monitor for unusual file access patterns</li>
+                    <li><strong>Network traffic inspection:</strong> Deep packet inspection for hidden payloads</li>
+                    <li><strong>File integrity monitoring:</strong> Detect unauthorized modifications</li>
+                    <li><strong>Sandboxing:</strong> Execute suspicious files in isolated environments</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RCE Tab -->
+        <div id="rce" class="tab-content">
+            <h2>Remote Code Execution (RCE)</h2>
+            <p class="intro">Critical vulnerabilities allowing attackers to execute arbitrary code on target systems remotely.</p>
+            
+            <div class="threat-card">
+                <h3>What is Remote Code Execution?</h3>
+                <p>Remote Code Execution (RCE) is a class of vulnerability that allows an attacker to execute malicious code on a target system from a remote location, often without authentication.</p>
+                
+                <h4>Why RCE is Critical:</h4>
+                <ul>
+                    <li><strong>Complete System Compromise:</strong> Attacker gains full control</li>
+                    <li><strong>No Physical Access Required:</strong> Exploit over the internet</li>
+                    <li><strong>Rapid Exploitation:</strong> Can be automated and mass-deployed</li>
+                    <li><strong>Lateral Movement:</strong> Use compromised system as pivot point</li>
+                </ul>
+
+                <h4>Common RCE Vulnerability Types:</h4>
+                
+                <div class="attack-entry">
+                    <h5>1. Buffer Overflow</h5>
+                    <p><strong>Description:</strong> Writing more data to a buffer than it can hold, overwriting adjacent memory</p>
+                    <p><strong>Example:</strong> Stack-based and heap-based overflows</p>
+                    <p><strong>Impact:</strong> Arbitrary code execution, system crash</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>2. Injection Flaws</h5>
+                    <p><strong>Description:</strong> Inserting malicious code into application inputs</p>
+                    <p><strong>Types:</strong> SQL injection, command injection, LDAP injection, XML injection</p>
+                    <p><strong>Impact:</strong> Database access, command execution, data manipulation</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>3. Deserialization Vulnerabilities</h5>
+                    <p><strong>Description:</strong> Exploiting unsafe deserialization of untrusted data</p>
+                    <p><strong>Example:</strong> Java, Python, PHP deserialization attacks</p>
+                    <p><strong>Impact:</strong> Remote code execution, privilege escalation</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>4. Server-Side Request Forgery (SSRF)</h5>
+                    <p><strong>Description:</strong> Forcing server to make requests to unintended locations</p>
+                    <p><strong>Example:</strong> Cloud metadata access, internal network scanning</p>
+                    <p><strong>Impact:</strong> Internal system access, credential theft</p>
+                </div>
+
+                <h4>Notable RCE Exploitations (Recent Years):</h4>
+                
+                <div class="attack-entry">
+                    <h5>Log4Shell (CVE-2021-44228)</h5>
+                    <p><strong>Severity:</strong> 10.0 CVSS (Critical)</p>
+                    <p><strong>Affected:</strong> Apache Log4j - billions of devices</p>
+                    <p><strong>Exploit:</strong> JNDI injection leading to RCE</p>
+                    <p><strong>Impact:</strong> Mass exploitation by nation-states and ransomware groups</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>ProxyShell / ProxyLogon (Microsoft Exchange)</h5>
+                    <p><strong>Severity:</strong> 9.8 CVSS (Critical)</p>
+                    <p><strong>Affected:</strong> Microsoft Exchange Server</p>
+                    <p><strong>Exploit:</strong> Authentication bypass + RCE chain</p>
+                    <p><strong>Impact:</strong> 30,000+ Exchange servers compromised, web shells deployed</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>Citrix Bleed (CVE-2023-4966)</h5>
+                    <p><strong>Severity:</strong> 9.4 CVSS (Critical)</p>
+                    <p><strong>Affected:</strong> Citrix NetScaler ADC and Gateway</p>
+                    <p><strong>Exploit:</strong> Session hijacking leading to RCE</p>
+                    <p><strong>Impact:</strong> Nation-state exploitation, Boeing and other enterprises compromised</p>
+                </div>
+
+                <h4>RCE in the Attack Chain:</h4>
+                <ol>
+                    <li><strong>Reconnaissance:</strong> Identify vulnerable systems</li>
+                    <li><strong>Initial Access:</strong> Exploit RCE vulnerability</li>
+                    <li><strong>Execution:</strong> Run malicious payload</li>
+                    <li><strong>Persistence:</strong> Install backdoors, rootkits</li>
+                    <li><strong>Lateral Movement:</strong> Spread to other systems</li>
+                    <li><strong>Exfiltration:</strong> Steal data or deploy ransomware</li>
+                </ol>
+
+                <h4>Defense Strategies:</h4>
+                <ul>
+                    <li><strong>Input Validation:</strong> Sanitize all user inputs</li>
+                    <li><strong>Patch Management:</strong> Rapid deployment of security updates</li>
+                    <li><strong>Web Application Firewalls (WAF):</strong> Filter malicious requests</li>
+                    <li><strong>Least Privilege:</strong> Minimize permissions and access</li>
+                    <li><strong>Network Segmentation:</strong> Limit blast radius of compromise</li>
+                    <li><strong>Runtime Application Self-Protection (RASP):</strong> Real-time threat detection</li>
+                    <li><strong>Security Testing:</strong> Regular penetration testing and code audits</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Triple Extortion Tab -->
+        <div id="triple-extortion" class="tab-content">
+            <h2>Triple Extortion Method</h2>
+            <p class="intro">The evolution of ransomware tactics: from encryption-only to multi-layered extortion schemes.</p>
+            
+            <div class="threat-card">
+                <h3>Evolution of Ransomware Extortion</h3>
+                
+                <div class="attack-entry">
+                    <h5>🔐 Traditional Ransomware (Single Extortion)</h5>
+                    <p><strong>Method:</strong> Encrypt victim's data and demand ransom for decryption key</p>
+                    <p><strong>Era:</strong> ~2005-2018</p>
+                    <p><strong>Example:</strong> WannaCry, Cryptolocker</p>
+                    <p><strong>Victim Response:</strong> Many organizations restored from backups without paying</p>
+                    <p><strong>Average Ransom:</strong> $5K - $50K</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>🔐🔐 Double Extortion</h5>
+                    <p><strong>Method:</strong> Encrypt data + Threaten to leak stolen data publicly</p>
+                    <p><strong>Era:</strong> ~2019-Present</p>
+                    <p><strong>Pioneer:</strong> Maze ransomware (2019)</p>
+                    <p><strong>Innovation:</strong> Exfiltrate sensitive data before encryption</p>
+                    <p><strong>Pressure Point:</strong> Regulatory fines, competitive intelligence, reputation damage</p>
+                    <p><strong>Example Groups:</strong> REvil, LockBit, BlackCat/ALPHV</p>
+                    <p><strong>Average Ransom:</strong> $200K - $5M</p>
+                </div>
+
+                <div class="attack-entry">
+                    <h5>🔐🔐🔐 Triple Extortion</h5>
+                    <p><strong>Method:</strong> Encrypt + Data leak threat + Additional pressure tactics</p>
+                    <p><strong>Era:</strong> ~2021-Present</p>
+                    <p><strong>Additional Tactics:</strong></p>
+                    <ul>
+                        <li><strong>DDoS Attacks:</strong> Overwhelm victim's network infrastructure</li>
+                        <li><strong>Customer Targeting:</strong> Contact victim's clients/customers directly</li>
+                        <li><strong>Supply Chain Pressure:</strong> Threaten business partners</li>
+                        <li><strong>Media Campaigns:</strong> Public shaming via press releases</li>
+                        <li><strong>Regulatory Reporting:</strong> Threaten to report compliance violations</li>
+                        <li><strong>Stock Market Manipulation:</strong> Target publicly traded companies</li>
+                    </ul>
+                    <p><strong>Example Groups:</strong> LockBit 3.0, ALPHV/BlackCat, Cl0p</p>
+                    <p><strong>Average Ransom:</strong> $1M - $50M+</p>
+                </div>
+
+                <h4>Triple Extortion in Practice:</h4>
+                
+                <div class="attack-entry">
+                    <h5>Case Study: Healthcare Sector Attack</h5>
+                    <p><strong>Phase 1 - Encryption:</strong> Hospital systems encrypted, patient care disrupted</p>
+                    <p><strong>Phase 2 - Data Leak:</strong> Threaten to publish 400GB patient medical records</p>
+                    <p><strong>Phase 3 - Additional Pressure:</strong></p>
+                    <ul>
+                        <li>DDoS attacks on hospital website</li>
+                        <li>Direct calls to patients threatening to release their records</li>
+                        <li>Contact media outlets with stolen data samples</li>
+                        <li>Threaten HIPAA violation reporting to regulators</li>
+                    </ul>
+                    <p><strong>Result:</strong> Massive pressure to pay quickly, limited negotiation room</p>
+                </div>
+
+                <h4>Why Triple Extortion is Effective:</h4>
+                <ul>
+                    <li><strong>Multiple Failure Points:</strong> Backups don't protect against data leaks</li>
+                    <li><strong>Reputational Damage:</strong> Public exposure of breach = loss of customer trust</li>
+                    <li><strong>Regulatory Penalties:</strong> GDPR, HIPAA, PCI-DSS fines can exceed ransom</li>
+                    <li><strong>Business Disruption:</strong> DDoS compounds operational downtime</li>
+                    <li><strong>Customer Impact:</strong> Direct targeting creates legal liability</li>
+                    <li><strong>Insurance Pressure:</strong> Cyber insurance may require payment to avoid claims</li>
+                </ul>
+
+                <h4>Emerging: Quadruple Extortion</h4>
+                <p>Some groups are now exploring fourth-layer tactics:</p>
+                <ul>
+                    <li><strong>Crypto-mining:</strong> Deploy miners on victim infrastructure</li>
+                    <li><strong>Follow-up Attacks:</strong> Re-attack same victim months later</li>
+                    <li><strong>Competitive Sabotage:</strong> Sell data to competitors</li>
+                    <li><strong>Identity Theft Services:</strong> Monetize stolen PII through fraud</li>
+                </ul>
+
+                <h4>Defense Against Multi-Extortion:</h4>
+                <ul>
+                    <li><strong>Zero Trust Architecture:</strong> Minimize lateral movement</li>
+                    <li><strong>Data Loss Prevention (DLP):</strong> Monitor and block exfiltration</li>
+                    <li><strong>Network Segmentation:</strong> Isolate critical systems</li>
+                    <li><strong>Endpoint Detection & Response (EDR):</strong> Detect pre-encryption behaviors</li>
+                    <li><strong>DDoS Mitigation:</strong> Cloud-based DDoS protection services</li>
+                    <li><strong>Incident Response Plan:</strong> Pre-negotiated crisis communications strategy</li>
+                    <li><strong>Cyber Insurance:</strong> Coverage for ransom, forensics, legal, PR</li>
+                    <li><strong>Dark Web Monitoring:</strong> Early warning of data leaks</li>
+                </ul>
+
+                <h4>Payment Trends:</h4>
+                <div class="trend-box">
+                    <p><strong>2024-2025 Statistics:</strong></p>
+                    <ul>
+                        <li>46% of organizations hit by ransomware paid the ransom</li>
+                        <li>Average dwell time before detection: 21 days</li>
+                        <li>Average data exfiltration: 100GB - 1TB</li>
+                        <li>Only 65% of data recovered on average after payment</li>
+                        <li>30% of victims experience repeat attacks within 12 months</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Defense Strategies Tab -->
+        <div id="defense" class="tab-content">
+            <h2>Defense Strategies & Recommendations</h2>
+            <p class="intro">Based on analysis of 2024-2025 attacks: comprehensive security framework to protect against modern cyber threats.</p>
+            
+            <div class="threat-card">
+                <h3>🛡️ Comprehensive Defense Framework</h3>
+
+                <div class="attack-entry">
+                    <h4>1. Identity & Access Management (IAM)</h4>
+                    <p><strong>Critical Finding:</strong> 80% of breaches involve compromised credentials</p>
+                    <p><strong>Recommendations:</strong></p>
+                    <ul>
+                        <li><strong>Multi-Factor Authentication (MFA):</strong> Enforce phishing-resistant MFA (FIDO2, hardware tokens)</li>
+                        <li><strong>Zero Trust Architecture:</strong> Never trust, always verify - even internal requests</li>
+                        <li><strong>Privileged Access Management (PAM):</strong> Strict control over admin accounts</li>
+                        <li><strong>Just-In-Time Access:</strong> Temporary elevated privileges only when needed</li>
+                        <li><strong>Password Policies:</strong> 14+ characters, password managers, no rotation requirements</li>
+                        <li><strong>Identity Threat Detection:</strong> Monitor for credential stuffing, brute force</li>
+                    </ul>
+                </div>
+
+                <div class="attack-entry">
+                    <h4>2. Network Security & Segmentation</h4>
+                    <p><strong>Critical Finding:</strong> Lateral movement accounts for 70% of ransomware damage</p>
+                    <p><strong>Recommendations:</strong></p>
+                    <ul>
+                        <li><strong>Micro-Segmentation:</strong> Isolate critical assets and workloads</li>
+                        <li><strong>Network Access Control (NAC):</strong> Authenticate devices before network access</li>
+                        <li><strong>Next-Gen Firewalls (NGFW):</strong> Deep packet inspection, IPS/IDS</li>
+                        <li><strong>VPN Security:</strong> Patch management, MFA, session monitoring</li>
+                        <li><strong>OT/ICS Isolation:</strong> Air-gap or heavily segment operational technology</li>
+                        <li><strong>East-West Traffic Monitoring:</strong> Detect internal reconnaissance</li>
+                    </ul>
+                </div>
+
+                <div class="attack-entry">
+                    <h4>3. Endpoint Protection</h4>
+                    <p><strong>Critical Finding:</strong> 90% of attacks target endpoints as initial access</p>
+                    <p><strong>Recommendations:</strong></p>
+                    <ul>
+                        <li><strong>EDR/XDR Solutions:</strong> Real-time threat detection and response</li>
+                        <li><strong>Application Allowlisting:</strong> Only approved software can execute</li>
+                        <li><strong>Patch Management:</strong> Automated patching within 72 hours of release</li>
+                        <li><strong>Endpoint Encryption:</strong> Full disk encryption for all devices</li>
+                        <li><strong>Anti-Ransomware Protection:</strong> Behavioral analysis, file backup protection</li>
+                        <li><strong>Mobile Device Management (MDM):</strong> Secure BYOD and corporate devices</li>
+                    </ul>
+                </div>
+
+                <div class="attack-entry">
+                    <h4>4. Data Protection & Backup</h4>
+                    <p><strong>Critical Finding:</strong> Organizations with immutable backups recovered 3x faster</p>
+                    <p><strong>Recommendations:</strong></p>
+                    <ul>
+                        <li><strong>3-2-1 Backup Rule:</strong> 3 copies, 2 different media, 1 offsite</li>
+                        <li><strong>Immutable Backups:</strong> Write-once, read-many (WORM) storage</li>
+                        <li><strong>Air-Gapped Backups:</strong> Offline copies for critical systems</li>
+                        <li><strong>Regular Testing:</strong> Quarterly restore drills</li>
+                        <li><strong>Data Loss Prevention (DLP):</strong> Monitor and block exfiltration attempts</li>
+                        <li><strong>Encryption:</strong> Data at rest and in transit (TLS 1.3, AES-256)</li>
+                    </ul>
+                </div>
+
+                <div class="attack-entry">
+                    <h4>5. Threat Detection & Response</h4>
+                    <p><strong>Critical Finding:</strong> Average dwell time of 21 days allows massive damage</p>
+                    <p><strong>Recommendations:</strong></p>
+                    <ul>
+                        <li><strong>Security Operations Center (SOC):</strong> 24/7 monitoring (in-house or MDR)</li>
+                        <li><strong>SIEM Platform:</strong> Centralized log aggregation and correlation</li>
+                        <li><strong>User and Entity Behavior Analytics (UEBA):</strong> Detect anomalous behavior</li>
+                        <li><strong>Threat Intelligence Feeds:</strong> Real-time IOCs and TTPs</li>
+                        <li><strong>Incident Response Plan:</strong> Documented playbooks, tested quarterly</li>
+                        <li><strong>Forensic Capabilities:</strong> Preserve evidence, determine root cause</li>
+                    </ul>
+                </div>
+
+                <div class="attack-entry">
+                    <h4>6. Email & Phishing Protection</h4>
+                    <p><strong>Critical Finding:</strong> 85% of breaches start with phishing emails</p>
+                    <p><strong>Recommendations:</strong></p>
+                    <ul>
+                        <li><strong>Email Security Gateway:</strong> Advanced threat protection, sandboxing</li>
+                        <li><strong>DMARC/SPF/DKIM:</strong> Prevent email spoofing</li>
+                        <li><strong>Link Rewriting:</strong> Scan URLs at click-time</li>
+                        <li><strong>Attachment Sandboxing:</strong> Detonate files in isolated environment</li>
+                        <li><strong>Security Awareness Training:</strong> Monthly phishing simulations</li>
+                        <li><strong>Reporting Mechanism:</strong> Easy way for users to report suspicious emails</li>
+                    </ul>
+                </div>
+
+                <div class="attack-entry">
+                    <h4>7. Cloud Security</h4>
+                    <p><strong>Critical Finding:</strong> Misconfigured cloud services led to 30% of data breaches</p>
+                    <p><strong>Recommendations:</strong></p>
+                    <ul>
+                        <li><strong>Cloud Security Posture Management (CSPM):</strong> Continuous compliance scanning</li>
+                        <li><strong>Cloud Access Security Broker (CASB):</strong> Monitor SaaS application usage</li>
+                        <li><strong>Identity Federation:</strong> Single sign-on (SSO) with MFA</li>
+                        <li><strong>Least Privilege IAM Policies:</strong> Minimal permissions required</li>
+                        <li><strong>Encryption Key Management:</strong> Customer-managed keys (CMK)</li>
+                        <li><strong>Container Security:</strong> Image scanning, runtime protection</li>
+                    </ul>
+                </div>
+
+                <div class="attack-entry">
+                    <h4>8. Vulnerability Management</h4>
+                    <p><strong>Critical Finding:</strong> 60% of breaches exploited known, unpatched vulnerabilities</p>
+                    <p><strong>Recommendations:</strong></p>
+                    <ul>
+                        <li><strong>Continuous Scanning:</strong> Weekly vulnerability assessments</li>
+                        <li><strong>Risk-Based Prioritization:</strong> Focus on exploitable, critical CVEs</li>
+                        <li><strong>Patch Management:</strong> Critical patches within 72 hours, high within 7 days</li>
+                        <li><strong>Virtual Patching:</strong> WAF rules for systems that can't be patched</li>
+                        <li><strong>Penetration Testing:</strong> Annual external, biannual internal</li>
+                        <li><strong>Bug Bounty Program:</strong> Crowdsourced security testing</li>
+                    </ul>
+                </div>
+
+                <div class="attack-entry">
+                    <h4>9. Supply Chain Security</h4>
+                    <p><strong>Critical Finding:</strong> Supply chain attacks increased 400% in 2024</p>
+                    <p><strong>Recommendations:</strong></p>
+                    <ul>
+                        <li><strong>Vendor Risk Assessment:</strong> Security questionnaires, SOC 2 audits</li>
+                        <li><strong>Software Bill of Materials (SBOM):</strong> Track dependencies</li>
+                        <li><strong>Code Signing:</strong> Verify integrity of software updates</li>
+                        <li><strong>Third-Party Access Controls:</strong> Separate network zones, JIT access</li>
+                        <li><strong>Continuous Monitoring:</strong> Audit vendor access logs</li>
+                        <li><strong>Incident Response Coordination:</strong> Shared breach notification protocols</li>
+                    </ul>
+                </div>
+
+                <div class="attack-entry">
+                    <h4>10. Governance, Risk & Compliance (GRC)</h4>
+                    <p><strong>Critical Finding:</strong> Organizations with mature GRC programs reduced breach costs by 40%</p>
+                    <p><strong>Recommendations:</strong></p>
+                    <ul>
+                        <li><strong>Risk Assessment:</strong> Annual risk analysis, identify crown jewels</li>
+                        <li><strong>Security Policies:</strong> Documented, board-approved, annually reviewed</li>
+                        <li><strong>Compliance Frameworks:</strong> NIST CSF, ISO 27001, CIS Controls</li>
+                        <li><strong>Third-Party Audits:</strong> Independent security assessments</li>
+                        <li><strong>Board Reporting:</strong> Quarterly cybersecurity briefings</li>
+                        <li><strong>Cyber Insurance:</strong> Appropriate coverage with clear terms</li>
+                    </ul>
+                </div>
+
+                <h3>🎯 Priority Actions for 2025</h3>
+                <div class="trend-box">
+                    <p><strong>Based on Current Threat Landscape:</strong></p>
+                    <ol>
+                        <li><strong>Implement Phishing-Resistant MFA</strong> - Blocks 99% of credential attacks</li>
+                        <li><strong>Deploy EDR/XDR</strong> - Critical for ransomware detection</li>
+                        <li><strong>Create Immutable Backups</strong> - Last line of defense against encryption</li>
+                        <li><strong>Network Segmentation</strong> - Limits lateral movement</li>
+                        <li><strong>Patch Management Acceleration</strong> - Close zero-day windows</li>
+                        <li><strong>Security Awareness Training</strong> - Human firewall strengthening</li>
+                        <li><strong>Incident Response Planning</strong> - Reduce dwell time and impact</li>
+                        <li><strong>Threat Intelligence Integration</strong> - Proactive defense posture</li>
+                    </ol>
+                </div>
+
+                <h3>💰 Cost-Benefit Analysis</h3>
+                <p><strong>Average Breach Costs (2024):</strong></p>
+                <ul>
+                    <li>Healthcare: $10.9M per breach</li>
+                    <li>Financial: $6.0M per breach</li>
+                    <li>Technology: $5.1M per breach</li>
+                    <li>Energy: $5.0M per breach</li>
+                    <li>Ransomware: $4.9M average (including downtime)</li>
+                </ul>
+
+                <p><strong>Security Investment ROI:</strong></p>
+                <ul>
+                    <li>Organizations with high security maturity save $1.5M per breach</li>
+                    <li>AI-powered security tools reduce breach lifecycle by 98 days</li>
+                    <li>Incident response planning reduces costs by $1.2M</li>
+                    <li>Employee training reduces phishing success by 85%</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cyber Threats Intelligence Dashboard | Data compiled from 2024-2025 security incidents</p>
+            <p class="disclaimer">For educational and security awareness purposes only</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
